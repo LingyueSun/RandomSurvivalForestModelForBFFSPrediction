@@ -17,11 +17,11 @@ lines(lowess(SurvivlFunction, f=0.05), col = 2, lwd = 3)
 ![BFFSPredictionForSamplePatient](https://user-images.githubusercontent.com/56777354/157321898-93157176-feff-4df5-94a2-cd67f7769382.jpeg)
 
 #### Note the variable settings for the sample patient:
-#### "PSAatDiagnosis": PSA level at diagnosis, continuous variable >0         
+#### "PSAatDiagnosis": PSA level at diagnosis, continuous variable         
 #### "ClinicalTstage2": Clinical T stage at diagnosis, categorical variable, 3 levels: "T1 - T2a", "T2b - T2c", or "T3"    
 #### "GleasonScore_Categ": Total Gleason Score at diagnosis, categorical variable, 3 levels: "6", "7", or "8andAbove"      
 #### "PelvicRT_Technique_Categ": Pelvic irradiation technique used for EBRT, categorical variable, 4 levels: "2PhasePelvicIrrad", "DoseToProstDiffDoseToSV", "SinglePhaseToProst+/-SV", or "SIBPelvicIrrad"
 #### "IGRT_Frequency2": The frequency for image guidance, categorical variable, 3 levels: "Daily", "MixedWeeklyAndDaily", or "Weekly"
-#### "PTVprescCIV98"           
-#### "CTVpresc_D99" 
+#### "PTVprescCIV98": V98%[%] for high dose PTV, continuous variable         
+#### "CTVpresc_D99": D99%[%] for high dose CTV, continuous variable   
 ####
