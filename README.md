@@ -1,5 +1,5 @@
 # RandomSurvivalForestModelForBFFSPrediction
-
+## This is sample code for using the model in R or R Studio
 library(randomForestSRC)
 
 load("my_model.RData") # my_model.RData contains the random survival forest model named 'RF_fit_final' and a sample patient named 'SamplePatient'
