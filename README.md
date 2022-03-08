@@ -1,5 +1,5 @@
 # RandomSurvivalForestModelForBFFSPrediction
-## This is sample code for using the model in R or R Studio
+## This is a sample code for using the model in R or R Studio
 library(randomForestSRC)
 
 load("my_model.RData") # my_model.RData contains the random survival forest model named 'RF_fit_final' and a sample patient named 'SamplePatient'
@@ -15,3 +15,8 @@ lines(lowess(SurvivlFunction, f=0.05), col = 2, lwd = 3)
 ### This outputs a figure showing the predicted biochemical failure free survival for the sample patient. The black points are the predictions at time points of interest and the red line is a smooth fit of the black points.
 
 ![BFFSPredictionForSamplePatient](https://user-images.githubusercontent.com/56777354/157321898-93157176-feff-4df5-94a2-cd67f7769382.jpeg)
+
+#### Note the variable settings for the sample patient:
+#### "PSAatDiagnosis": PSA level at diagnosis, >0         
+#### "ClinicalTstage2"          "GleasonScore_Categ"      "PelvicRT_Technique_Categ" "IGRT_Frequency2"          "PTVprescCIV98"           "CTVpresc_D99" 
+####
